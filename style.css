@@ -324,3 +324,13 @@ body.dark .modal-window {
     overflow: hidden;
     transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* Mobile Navigation Drawer toggles */
+#mobile-nav-overlay.open {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+#mobile-nav-drawer.open {
+    right: 0 !important;
+}
