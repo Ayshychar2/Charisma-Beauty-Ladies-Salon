@@ -50,13 +50,14 @@ function initNavigation() {
         document.body.style.overflow = 'hidden'; // Prevent scroll
     }
 
-    window.closeMobileMenu = function() {
+    function closeMobileMenu() {
         if (mobileNavOverlay && mobileNavDrawer) {
             mobileNavOverlay.classList.remove('open');
             mobileNavDrawer.classList.remove('open');
             document.body.style.overflow = '';
         }
     }
+    window.closeMobileMenu = closeMobileMenu;
 
     // Set Active State in Navbar based on current pathname
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
